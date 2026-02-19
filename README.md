@@ -1,4 +1,4 @@
-# 🌐 Web II - 
+# 🌐 Web II - Repositório com as aulas e exercícios da disciplina **Web II (Desenvolvimento Web com Node.js e MVC)**, desenvolvidos durante o curso na **ETEC Prof. Massuyuki Kawano – Tupã/SP**, sob orientação do **Prof. Adauto Michelotti**.
 
 # 🧑‍🏫 Aula 01 – Introdução ao Desenvolvimento Web MVC com Node.js
 
