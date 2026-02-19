@@ -9,7 +9,7 @@ Repositório com as aulas, práticas e exercícios da disciplina **Web II**, com
 
 📍 Curso: Técnico em Desenvolvimento de Sistemas  
 🏫 Instituição: ETEC Prof. Massuyuki Kawano – Tupã/SP  
-👨‍🏫 Professor: Prof. Adauto Michelotti  
+👨‍🏫 Professor: Adauto Michelotti  
 
 ---
 
