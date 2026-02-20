@@ -27,6 +27,12 @@
         let letra = "M";
         let letraM = produtos.filter(produto => produto.startsWith(letra));
         console.log(letraM);
+
+        // .length no final conta quantos elementos restaram após o filtro
+        let comecaComM = produtos.filter(nome => nome[0].toUpperCase() === 'M').length;
+
+        // Exibe o resultado usando template literals para formatação
+        console.log(`\nQuantidade de nomes que começam com 'M': ${comecaComM}`); 
     </script>
   
 </body>
