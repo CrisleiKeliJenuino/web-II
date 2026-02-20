@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão de Arrays</title>
+</head>
+<body>
+    <h1>Console do navegador!</h1>
+    <script>
+        let produtos = ["teclado", "Mouse", "Monitor", "Gabinete"];
+
+        // Mostrar todos os produtos
+        produtos.forEach((p, i) => {
+            console.log(`${i + 1} - ${p}`);
+        });
+
+        // Filtrar produtos com mais de 6 letras
+        let filtrados = produtos.filter(p => p.length > 6);
+        console.log("Produtos com mais de 6 letras:", filtrados);
+
+        // Convertes os produtos para letra maiúscula
+        let produtosMaiusculos = produtos.map(produtos => produtos.toUpperCase());
+        console.log(produtosMaiusculos)
+
+        // Listas os produtos com a letra M
+        let letra = "M";
+        let letraM = produtos.filter(produto => produto.startsWith(letra));
+        console.log(letraM);
+    </script>
+  
+</body>
+</html>
