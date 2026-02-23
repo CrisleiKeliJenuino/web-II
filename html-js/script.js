@@ -6,8 +6,6 @@ let produtos = [];
 document.getElementById("formProduto").addEventListener("submit", function(e) {
     // Prevenir o comportamento padrão do formulário (recarregar a página)
     e.preventDefault();
-    const botao = e.submitter.value; // Captura o botão que foi clicado para submeter o formulário
-    if (botao === "Cadastrar") {
          // Capturar os valores dos campos de input do formulário
         // .value obtém o conteúdo digitado pelo usuário
         let nome = document.getElementById("nome").value;
@@ -21,11 +19,10 @@ document.getElementById("formProduto").addEventListener("submit", function(e) {
     
         // Salvar os dados no localStorage do navegador para persistência
         salvarLocalStorage();
-    } else if (botao === "Limpar") {
-        // Limpar o array de produtos e o localStorage
-        clearLocalStorage();
-    };
-    
+        atualizarLista();
+        document.getElementById("formProduto").reset();
+
+
     // Atualizar a exibição da lista na tela
     atualizarLista();
 });
@@ -34,6 +31,7 @@ document.getElementById("formProduto").addEventListener("submit", function(e) {
 function atualizarLista() {
     // Obter referência ao elemento <ul> onde será exibida a lista
     let lista = document.getElementById("listaProdutos");
+    document.getElementById("formProduto").reset();
     
     // Limpar todo o conteúdo anterior da lista
     lista.innerHTML = "";
@@ -72,6 +70,13 @@ function carregarLocalStorage() {
         atualizarLista();
     }
 }
+
+document.getElementById("btnLimpar").addEventListener("click", function() {
+    produtos = []; // limpa o array
+    localStorage.removeItem("produtos"); // remove do localStorage
+    atualizarLista(); // atualiza a tela
+});
+
 
 // Executar a função de carregamento quando a página é carregada
 // Isso restaura os produtos salvos anteriormente
