@@ -12,7 +12,7 @@ exports.criar = (req, res) => {
 
 // validação simples (didática)
 if (!nome) {
-    return res.status(400).json({error: "nome obrigatório"});
+    return res.status(400).json({error: "nome_obrigatorio"});
 }
 
 const novo = {
