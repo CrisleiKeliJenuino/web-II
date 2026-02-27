@@ -8,17 +8,18 @@ exports.listar = (req, res) => {
 
 //POST /alunos
 exports.criar = (req, res) => {
-    const {nome, idade} = req.body || {};
+    const {nome, idade, profissao} = req.body || {};
 
 // validação simples (didática)
 if (!nome) {
-    return res.status(400).json({error: "nome_obrigatorio"});
+    return res.status(400).json({error: "nome obrigatório"});
 }
 
 const novo = {
     id: alunos.length + 1,
     nome,
     idade: idade ?? null,
+    profissao: profissao,
 };
 
 alunos.push(novo);
