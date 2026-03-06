@@ -8,7 +8,7 @@ app.get("/mensagem", (req, res) => {
 });
 
 app.get("/curso", (req, res) => {
-    res.json({"nome":"Desenvolvimento Web", "carga_horaria":"1120"});
+    res.json({"nome":"Desenvolvimento Web", "carga_horaria":"120"});
 });
 
 const PORT = 3000;
