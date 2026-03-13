@@ -1,0 +1,13 @@
+{
+  "name": "api-mvc-bugada-12bugs",
+  "version": "1.0.0",
+  "description": "API com bugs propositais para atividade em sala",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node scr/server.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
