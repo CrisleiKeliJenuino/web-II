@@ -1,7 +1,7 @@
 const express = require("express");
 
-const usuariosRoutes = require("./route/usuarios");
-const helloRoutes = require("./routes/hello");
+const usuariosRouters = require("./routes/usuarios");
+const helloRouters = require("./routes/hello");
 
 const app = express();
 
@@ -9,7 +9,7 @@ const app = express();
 // app.use(express.json());
 
 // rotas da aplicação
-app.use("/usuario", usuariosRoutes);
-app.use("/hello", helloRoutes);
+app.use("/usuarios", usuariosRouters);
+app.use("/hello", helloRouters);
 
 module.exports = app;

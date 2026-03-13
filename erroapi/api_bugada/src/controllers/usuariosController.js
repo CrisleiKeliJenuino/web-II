@@ -3,3 +3,5 @@ const listarUsuarios = (req, res) => {
     mensagem: "Rota de usuários funcionando!"
   });
 };
+
+module.exports = {listarUsuarios};

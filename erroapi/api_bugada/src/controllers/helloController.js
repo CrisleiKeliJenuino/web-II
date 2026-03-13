@@ -1,9 +1,9 @@
 const hello = (req, res) => {
-  res.status(201).json({
+  res.json({
     mensage: "Hello! API funcionando!"
   });
 };
 
-module.export = {
+module.exports = {
   hello
 };
