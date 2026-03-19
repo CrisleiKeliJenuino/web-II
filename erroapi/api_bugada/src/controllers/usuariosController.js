@@ -1,5 +1,5 @@
 const listarUsuarios = (req, res) => {
-  req.json({
+  res.json({
     mensagem: "Rota de usuários funcionando!"
   });
 };
