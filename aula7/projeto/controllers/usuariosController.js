@@ -1,16 +1,16 @@
 exports.criarUsuario = (req, res) => {
-  const { nome, email } = req.body;
+  const { nome, email, idade } = req.body;
 
 //Validação do nome
-if(!nome){
+if(!nome || nome.length < 3){
     return res.status(400).json({ 
         sucess: false,
-        error: "O nome é obrigatório." 
+        error: "O nome é obrigatório e deve ter pelo menos 3 caracteres." 
     });
 }
 
 //Validação do email
-if((!email) || !email.includes('@')){
+if(!email || !email.includes('@')){
     return res.status(400).json({ 
         sucess: false,
         error: "Email inválido." 
@@ -18,7 +18,7 @@ if((!email) || !email.includes('@')){
 }
 
 // Validação da idade
-if (!idade || idade < 0){
+if (!idade || idade < 0 || idade > 120) {
     return res.status(400).json({
         sucess: false,
         error: "Idade inválida."
