@@ -18,6 +18,12 @@ app.use('/login', loginRoutes);
 const calcularRoutes = require('./routes/calcular');
 app.use('/calcular', calcularRoutes);
 
+const classificarRoutes = require('./routes/classificar');
+app.use('/classificar', classificarRoutes);
+
+const erroRoutes = require('./routes/erro');
+app.use('/erro', erroRoutes);
+
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
 });
